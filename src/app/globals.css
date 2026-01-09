@@ -7,8 +7,8 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: #061B2D;
+  color: #ffffff;
+  background: #061B2D; /* This forces the dark blue background immediately */
 }
 
 /* Custom Scrollbar */
