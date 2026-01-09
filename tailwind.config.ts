@@ -2,6 +2,12 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
+    // If you have a src folder
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    
+    // If you don't have a src folder
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
@@ -9,11 +15,11 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        "bg-dark": "#061B2D",      // Deep Ocean Blue
-        "neon-cyan": "#00F0FF",    // Main Accent
-        "neon-teal": "#00B3A4",    // Secondary Accent
-        "palm-green": "#2AFF5A",   // Palm Accent
-        "soft-blue": "#D1EFFF",    // Text Color
+        "bg-dark": "#061B2D",
+        "neon-cyan": "#00F0FF",
+        "neon-teal": "#00B3A4",
+        "palm-green": "#2AFF5A",
+        "soft-blue": "#D1EFFF",
         "card-dark": "rgba(6, 27, 45, 0.6)",
       },
       fontFamily: {
